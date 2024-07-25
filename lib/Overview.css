@@ -1,0 +1,249 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter";
+    text-decoration: none;
+}
+
+body{
+    background-color: #081629;
+}
+
+.sidebar{
+    position: fixed;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    /* background-color: #0ef;; */
+    background: linear-gradient(#081b29, #0ef, #081629, #0ef);
+    transition: all .5s ease;
+}
+
+.sidebar .fas {
+    margin-right: 8px;
+}
+
+
+.sidebar header{
+    font-size: 22px;
+    color: white;
+    text-align: center;
+    line-height: 70px;
+    background: rgb(1, 12, 37);
+    user-select: none;
+}
+
+.sidebar ul a{
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 65px;
+    font-size: 20px;
+    color: #fff;
+    padding-left: 40px;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(255,255,255,.1);
+    border-bottom: 1px solid black;
+    transition: .4s;
+}
+
+/*ul li:hover a{
+    p*/
+
+.sidebar ul a i{
+    margin-right: 1;
+}
+
+#check{
+    display: none;
+}
+
+label #btn,label #cancel{
+    position: absolute;
+    cursor: pointer;
+    /* background: #0ef;; */
+    background: linear-gradient(#081b29, #0ef, #081629, #0ef);
+    border-radius: 3px;
+}
+label #btn{
+    left: 40px;
+    top: 25px;
+    font-size: 35px;
+    color: white;
+    padding: 6px 12px;
+    transition: all .5s;
+    /* z-index:1000; */
+    opacity: 0;
+}
+label #cancel{
+    z-index: 1111;
+    left: 195px;
+    top: 17px;
+    font-size: 30px;
+    color: #0a5275;
+    padding: 4px 9px;
+    transition: all .5s ease;
+
+}
+
+#check:checked ~ .sidebar{
+    left: -250px;
+}
+
+#check:checked ~ label #btn{
+    left: 20px;
+    opacity: 1;
+    pointer-events: 1px;
+}
+
+#check:checked ~ label #cancel{
+    left: 0;
+    opacity: 0;
+
+    
+}
+
+
+.header-text{
+    margin-left: 65rem;
+    display: flex;
+}
+
+.image{
+    width: 60px;
+    padding-top: 20px;
+}
+
+.header-text h1{
+    padding-top: 40px;
+    font-size: 20px;
+    padding-left: 40px;
+    color: #fff;
+}
+
+.header-text h1 span{
+    color: #0ef;
+}
+
+/* section 2 */
+
+ .second-hearder{
+     margin-left: 18rem;
+     margin-right: 5rem;
+     margin-top: 5rem;
+     padding: 20px;
+     margin-bottom: 5rem;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+     background: #081629; 
+     color: #fff;
+     box-shadow: 0 0 25px #0ef;
+     border: 2px solid #0ef;
+} 
+
+form, .input{
+    color: #0ef;
+    padding-bottom: 60px;
+}
+
+.text1{
+    padding-bottom: 50px;
+     font-size: 30px;
+}
+
+.text2{
+    padding-bottom: 20px;
+    font-size: 20px;
+}
+
+.text3{
+    padding-bottom: 20px;
+    font-size: 15px;
+}
+
+.text4{
+    padding-bottom: 15px;
+    font-size: 20px;
+}
+
+.btn{
+    position: relative;
+    /* width: 100%; */
+    /* height: 45px; */
+    background: transparent;
+    border: 2px solid #0ef;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 10px;
+    margin: 15px;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 600;
+    z-index: 1;
+    overflow: hidden;
+}
+
+ .btn::before{
+    content: "";
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 300%;
+    background: linear-gradient(#081b29, #0ef, #081629, #0ef);
+    z-index: -1;
+    transition: .5s;
+    /* background: #0ef; */
+} 
+
+.btn:hover::before{
+    top: 0;
+}
+
+.form2 h1{
+    font-size: 20px;
+}
+
+.btnn{
+    position: relative;
+    /* width: 100%; */
+    /* height: 45px; */
+    background: transparent;
+    border: 2px solid #0ef;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 10px;
+    margin: 15px;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 600;
+    z-index: 1;
+    overflow: hidden;
+}
+
+ .btnn::before{
+    content: "";
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 300%;
+    /* background: linear-gradient(#081b29, #0ef, #081629, #0ef); */
+    z-index: -1;
+    transition: .5s;
+    /* background: #0ef; */
+} 
+
+.btn:hover::before{
+    top: 0;
+}
+
+.form3{
+    margin-left: 41rem;
+}

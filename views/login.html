@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/5412624264.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../lib/login.css">
+    <title>Log in</title>
+</head>
+<body>
+    
+    <div class="wrapper">
+
+            <span class="bg-animate"></span>
+
+        <div class="form-box login">
+            <h2>Login</h2>
+            <form action="http://127.0.0.1:5500/views/Dashboard.html" id="login">
+                <div class="input-box">
+                    <input type="text" required id="username">
+                    <label>Username</label>
+                    <i class="fa-solid fa-user"></i>
+                </div>
+
+                <div class="input-box">
+                    <input type="password" required id="password">
+                    <label>Password</label>
+                    <i class="fa-solid fa-lock"></i>
+                </div>
+
+                <!-- <div class="input-box"> -->
+                    <!-- <input type="password" required> -->
+                    <!-- <label> Confirm Password</label> -->
+                    <!-- <i class="fa-solid fa-lock"></i> -->
+                <!-- </div> -->
+                
+                <button type="submit" class="btn" >Login</button>
+                <div class="logreg-link">
+                    <p>Don't have an account? <a href="http://127.0.0.1:5500/views/sign-up.html" class="register-link">Sign Up</a></p>
+                </div>
+            </form>
+        </div>
+        <div class="info-text login">
+            <h2>Welcome Back!</h2>
+            <p>The <span> Avary Business Support team</span> is a dedicated group of professionals committed to 
+                fostering success for new entrepreneurs. With a wealth of expertise in various industries. 
+               </p>
+        </div>
+    </div>
+
+    <script src="../Js-folder/login.js"></script>
+</body>
+</html>
