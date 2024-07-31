@@ -5,55 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<h1 id="demo"></h1>
-<h1 id="sand"></h1>
-<h1 id="dem"></h1>
 <body>
+<form action="#" id="form">
+    <input type="radio" value="You Are welcome" name="gender">Yes
+    <br>
+    <input type="radio"  value="Thanks for coming" name="gender">
+    <br>
+    <input type="submit" onclick="txt()">
+</form>
+
+
+
     <script>
+        function txt(){
+            let p1 = document.getElementById("form").value;
+            // let p2 = document.getElementById("name").value;
 
-    
-        function prosper (num1, num2) {
-            return num1 % num2
-        }
-        let y = prosper(4, 9)
-        document.getElementById("demo").innerHTML= y
-    
-        //Arrow function
-        // const prosper = (num1, num2
+           
 
 
+            
+        // storing the data
 
-
-        let x = myFunction(4, 3);
-        document.getElementById("dem").innerHTML = x;
-
-        function myFunction(a, b) {
-            return a * b;
+        let users = localStorage.setItem("p1", p1);
+        // let names = localStorage.setItem("p2", p2);
         }
 
-
-    function myFunction (num1, num2) {
-        let sum = num1 + num2
-
-        return sum
-    }  
-    document.getElementById("sand").innerHTML= myFunction(20,3) 
-
-    // function call
-    myFunction(num1, num2)
-
-
-    function myFunc(theObject) {
-  theObject.make = "Toyota";
-}
-
-const mycar = {
-  make: "Honda",
-  model: "Accord",
-  year: 1998,
-};
-document.getElementById("san").innerHTML= myFunc(mycar) 
-        
     </script>
+    
 </body>
 </html>

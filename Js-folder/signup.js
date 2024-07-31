@@ -1,83 +1,145 @@
+function txt(){
+   let user = document.getElementById("username").value;
+   let pass = document.getElementById("password").value;
+   let confirm = document.getElementById("confirm_password").value;
+
+  //  storing the data
 
 
-let signupform = document.querySelector("#btn-Signup")
+  let User_name = localStorage.setItem("user", user);
+  let pass_word = localStorage.setItem("pass", pass);
+  let con_firm = localStorage.setItem("confirm", confirm); 
 
-console.log("Hello World")
-        let usernameinput = document.getElementById("username")
-        let passwordinput = document.getElementById("password")
-        let confirm_passwordinput = document.getElementById("confirm_password")
+      // retrieving stored data
 
-          // User constructor function
-          function User(username, password) {
-            this.username = username;
-            this.password = password; // In a real application, this should be hashed
-            this.confirm_password = confirm_password;
-        }
+  let Username = localStorage.getItem("user", user)
+  let password = localStorage.getItem("pass", pass)
+  let confirms = localStorage.getItem("confirm", confirm)
 
-        console.log("USERNAMEINPUT: ",usernameinput.innerText)
-        console.log("PASSWORDINPUT: ",passwordinput.value)
+
+  // let a, b, c;
+  // a =  " jonathanprosper@gmail.com"
+  // b = "jonathan"
+  // c = "jonathan"
+
+  // if (a == user && b == pass && c == confirm ){
+  //   alert("Login Successful !")
+  // } else {
+  //   alert("Invalid details")
+  //       alert("Invalid details")
+  // }
+
+  if (pass == confirm) {
+    console.error('Passwords do not match');
+    return;
+    
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// let signupform = document.querySelector("#btn-Signup")
+
+// console.log("Hello World")
+//         let usernameinput = document.getElementById("username")
+//         let passwordinput = document.getElementById("password")
+//         let confirm_passwordinput = document.getElementById("confirm_password")
+
+//           // User constructor function
+//           function User(username, password) {
+//             this.username = username;
+//             this.password = password; // In a real application, this should be hashed
+//             this.confirm_password = confirm_password;
+//         }
+
+//         console.log("USERNAMEINPUT: ",usernameinput.innerText)
+//         console.log("PASSWORDINPUT: ",passwordinput.value)
         
-                // Function to add a user
-                function addUser(username, password) {
-                  // Validate input
-                  if (!username || !password) {
-                      console.error('All fields are required');
-                      return;
+//                 // Function to add a user
+//                 function addUser(username, password) {
+//                   // Validate input
+//                   if (!username || !password) {
+//                       console.error('All fields are required');
+//                       return;
                       
-                  }
+//                   }
 
 
            
-       function  signup () {
+//        function  signup () {
 
              
 
-                let usernameValue = usernameinput.value
-                let passwordValue = passwordinput.value
-                let confirm_passwordValue = confirm_passwordinput.value
+//                 let usernameValue = usernameinput.value
+//                 let passwordValue = passwordinput.value
+//                 let confirm_passwordValue = confirm_passwordinput.value
                 
 
               
 
                   
 
-                    // Check if passwords match
-                    if (passwordValue !==  confirm_passwordValue ) {
-                        console.error('Passwords do not match');
-                        return;
-                    }
+//                     // Check if passwords match
+//                     if (passwordValue !==  confirm_passwordValue ) {
+//                         console.error('Passwords do not match');
+//                         return;
+//                     }
 
-                    // Create a new user object
-                    let user = new User(usernameValue , passwordValue);
+//                     // Create a new user object
+//                     let user = new User(usernameValue , passwordValue);
 
-                    // Get existing users from localStorage or initialize an empty array
-                    let users = JSON.parse(localStorage.getItem('users')) || [];
+//                     // Get existing users from localStorage or initialize an empty array
+//                     let users = JSON.parse(localStorage.getItem('users')) || [];
                      
-                    console.log("NEW USER",users);
+//                     console.log("NEW USER",users);
 
-                    // Add the new user to the array
-                    users.push(user);
+//                     // Add the new user to the array
+//                     users.push(user);
 
-                    // Store the updated array back in localStorage
-                    localStorage.setItem('users', JSON.stringify(users));
+//                     // Store the updated array back in localStorage
+//                     localStorage.setItem('users', JSON.stringify(users));
 
-                    console.log('USERS DATA: ', JSON.stringify(users));
-                    alert('User added successfully');
-                }
-                signupform.addEventListener("submit",  (event) => {
-                  event.preventDefault();
-                  signup();
-                }
+//                     console.log('USERS DATA: ', JSON.stringify(users));
+//                     alert('User added successfully');
+//                 }
+//                 signupform.addEventListener("submit",  (event) => {
+//                   event.preventDefault();
+//                   signup();
+//                 }
                   
-                  )
+//                   )
                 
 
-                // Example usage
+//                 // Example usage
                 
-                addUser(usernameValue, passwordValue)
+//                 addUser(usernameValue, passwordValue)
 
             
-              }
+//               }
 
               // alert("Kindly Sign up to get started please do not miss any step." )
 

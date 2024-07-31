@@ -128,47 +128,123 @@ label #cancel{
     color: #0ef;
 }
 
-/* section 2 */
+/* section2 */
 
-  .second-hearder{
-     margin-left: 18rem;
-     margin-right: 5rem;
-     margin-top: 5rem;
-     padding: 20px;
-     margin-bottom: 5rem;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh; 
-     background: #081629; 
-     color: #fff;
-     box-shadow: 0 0 25px #0ef;
-     border: 2px solid #0ef;
-}  
+.header{
+    margin-left: 18rem;
+    margin-right: 5rem;
+    margin-top: 5rem;
+    padding: 20px;
+    margin-bottom: 5rem;
+   justify-content: center;
+   align-items: center;
+   min-height: 90vh; 
+    background: #081629; 
+    color: #fff;
+    box-shadow: 0 0 25px #0ef;
+    border: 2px solid #0ef;
+} 
 
-form, .input{
-    color: #0ef;
-    padding-bottom: 60px;
+.first-header h1{
+    font-size: 35px;
+    padding-bottom: 8px;
 }
 
-.text1{
-    padding-bottom: 50px;
-     font-size: 30px;
-}
-
-.text2{
+.h1{
     padding-bottom: 20px;
     font-size: 20px;
 }
+.first-header p{
+ padding-top: 10px;
+}
 
-.text3{
-    padding-bottom: 20px;
+.first-container{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+    
+}
+
+.first-container1{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 80px;
+    
+}
+
+.first-container2{
+    /* display: flex;
+    justify-content: space-around; */
+    margin-top: 40px;
+    
+    
+}
+
+.input-box2{
+   padding-left: 5rem;
+}
+
+.form input{
+    padding: 10px;
+} 
+
+.container{
+    width: 680px;
+}
+
+.entryarea{
+    position: relative;
+    height: 20px;
+    line-height: 80px;
+}
+
+input{
+    position: absolute;
+    width: 90%;
+    outline: none;
+    font-size: 20px;
+    padding: 0 3px;
+    line-height: 40px;
+    border-radius: 10px;
+    border: 2px solid #f0ffff;
+    background: transparent;
+    transition: 0.1s ease;
+    z-index: 1111;
+}
+
+input::placeholder{
     font-size: 15px;
+    color: #fff;
+    padding: 10px;
 }
 
-.text4{
-    padding-bottom: 15px;
+.labelline{
+    position: relative;
+    bottom:  19px;
     font-size: 20px;
+    color: #f0ffff;
+    padding: 0 25px;
+    margin: 0 20px;
+    /* background-color: #081629; */
+    transition: 0.2s ease;
 }
+
+input:focus,
+input:valid{
+    color:#fff;
+    border: 4px solid #0ef;
+}
+
+input:focus +.labelline,
+input:valid + .labelline{
+    color: #0ef;
+    height: 30px;
+    line-height: 30px;
+    transform: translate(-15px, -16px) scale(0.88);
+    z-index: 1111;
+    
+}
+
 
 .btn{
     position: relative;
@@ -179,8 +255,8 @@ form, .input{
     outline: none;
     border-radius: 10px;
     cursor: pointer;
-    padding: 8px;
-    margin: 15px;
+    padding: 10px;
+    margin: 5px;
     font-size: 16px;
     color: #fff;
     font-weight: 600;
@@ -240,10 +316,8 @@ form, .input{
     /* background: #0ef; */
 } 
 
-.btn:hover::before{
-    top: 0;
-}
-
 .form3{
     margin-left: 41rem;
+    margin-top: 6rem;
 }
+

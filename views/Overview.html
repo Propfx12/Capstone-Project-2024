@@ -22,12 +22,10 @@
         <header>My Business </header>
         <ul>
             <li><a href="#"><i class="fas fa-qrcode"></i>Overview</a></li>
-            <li><a href="#"><i class="fas fa-link"></i>Cover</a></li>
-            <li><a href="#"><i class="fas -solid fa-building"></i>Company</a></li>
-            <li><a href="#"><i class="fas fa-calendar-week"></i>Excutive <summary></summary></a></li>
-            <li><a href="#"><i class="fas -solid fa-industry"></i>Industry</a></li>
-            <li><a href="#"><i class="fas -brands fa-intercom"></i>Customers</a></li>
-            <li><a href="#"><i class="fas -solid fa-bullhorn"></i>Marketing</a></li>
+            <li><a href="http://127.0.0.1:5500/views/cover.html"><i class="fas fa-link"></i>Cover</a></li>
+            <li><a href="http://127.0.0.1:5500/views/company.html#"><i class="fas -solid fa-building"></i>Company</a></li>
+            <li><a href="http://127.0.0.1:5500/views/Executive-summary.html"><i class="fas fa-calendar-week"></i>Excutive-summary</a></li>
+            <li><a href="http://127.0.0.1:5500/views/industry.html"><i class="fa-solid fa-industry"></i>industry</a></li>
         </ul>
     </div>
 
@@ -56,11 +54,10 @@
         </p>
 
         <form action="">
-            <input type="radio" name="gender" checked>New Company
+            <input type="radio" name="gender"  id="New Company" value="New Company">New Company
             <br>
             <br>
-            <input type="radio" name="gender"> 
-            Existing Company
+            <input type="radio" name="gender" id=" Existing Company" value="Existing Company">Existing Company
         </form>
 
         <h1 class="text4">
@@ -73,22 +70,22 @@
         <form action="">
             <br>
             <br>
-            <input type="radio" name="gender">Consumer Service
+            <input type="radio" name="gender" id="Consumer Service" value="Consumer Service">Consumer Service
             <br>
             <br>
-            <input type="radio" name="gender">Arts & Entertainment
+            <input type="radio" name="gender" id="Arts & Entertainment" value="Arts & Entertainment">Arts & Entertainment
             <br>
             <br>
-            <input type="radio" name="gender">Automotive
+            <input type="radio" name="gender" id="Automotive" value="Automotive">Automotive
             <br>
             <br>
-            <input type="radio" name="gender">Bar & Nightclub
+            <input type="radio" name="gender" id="Bar & Nightclub" value="Bar & Nightclub">Bar & Nightclub
             <br>
             <br>
-            <input type="radio" name="gender">Beauty/Hair Salon & Day Spa
+            <input type="radio" name="gender" id="Beauty/Hair Salon & Day Spa" value="Beauty/Hair Salon & Day Spa">Beauty/Hair Salon & Day Spa
             <br>
             <br>
-            <input type="radio" name="gender">Business Service
+            <input type="radio" name="gender" id="Business Service" value="Business Service">Business Service
         </form>
 
         <div class="form2">
@@ -96,18 +93,22 @@
                 Will you be seeking funding for your business plan?
             </h1>
 
-            <button class="btn">Yes</button>
-            <button class="btn">No</button>
-            <button class="btn">Not Sure</button>
+            <button class="btn" id="Yes" value="Yes">Yes</button>
+            <button class="btn" id="No" value="No">No</button>
+            <button class="btn" id="Not Sure" value="Not Sure">Not Sure</button>
         </div>
 
         <div class="form3">
             <button class="btnn">Back to Business Plan</button>
-            <button class="btn">Save & Next</button>
+            <!-- <button class="btn" onclick="location.href='http://127.0.0.1:5500/views/cover.html'">Save & Next</button> -->
+            <a href="http://127.0.0.1:5500/views/cover.html"><input type="submit" class="btn" onclick="text()" value="Save & Next" ></a>
         </div>
      </div>
-</section>
+
+     
+    </section>
     
+    <script src="../Js-folder/company.js"></script>
     
 </body>
 </html>

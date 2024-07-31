@@ -8,6 +8,16 @@
     text-decoration: none;
 }
 
+select{
+    font-size: 20px;
+    padding: 10px;
+    background: #0ef;
+    margin: 5px;
+}
+
+
+
+
 body{
     background-color: #081629;
 }
@@ -128,46 +138,37 @@ label #cancel{
     color: #0ef;
 }
 
-/* section 2 */
+.section-header{
+    margin-left: 18rem;
+    margin-right: 5rem;
+    margin-top: 5rem;
+    padding: 20px;
+    margin-bottom: 5rem;
+   justify-content: center;
+   align-items: center;
+   /* min-height: 100vh;  */
+    background: #081629; 
+    color: #fff;
+    box-shadow: 0 0 25px #0ef;
+    border: 2px solid #0ef;
+} 
 
-  .second-hearder{
-     margin-left: 18rem;
-     margin-right: 5rem;
-     margin-top: 5rem;
-     padding: 20px;
-     margin-bottom: 5rem;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh; 
-     background: #081629; 
-     color: #fff;
-     box-shadow: 0 0 25px #0ef;
-     border: 2px solid #0ef;
-}  
-
-form, .input{
-    color: #0ef;
-    padding-bottom: 60px;
-}
-
-.text1{
-    padding-bottom: 50px;
-     font-size: 30px;
-}
-
-.text2{
-    padding-bottom: 20px;
-    font-size: 20px;
-}
-
-.text3{
-    padding-bottom: 20px;
-    font-size: 15px;
-}
-
-.text4{
+.text h1{
+    font-size: 25px;
     padding-bottom: 15px;
+}
+
+.text{
+    padding-bottom: 40px;
+}
+
+.text1 h1{
     font-size: 20px;
+    padding-bottom: 10px;
+}
+
+input{
+    margin: 10px;
 }
 
 .btn{
@@ -179,8 +180,8 @@ form, .input{
     outline: none;
     border-radius: 10px;
     cursor: pointer;
-    padding: 8px;
-    margin: 15px;
+    padding: 10px;
+    margin: 5px;
     font-size: 16px;
     color: #fff;
     font-weight: 600;
@@ -240,10 +241,7 @@ form, .input{
     /* background: #0ef; */
 } 
 
-.btn:hover::before{
-    top: 0;
-}
-
 .form3{
     margin-left: 41rem;
+    margin-top: 6rem;
 }
