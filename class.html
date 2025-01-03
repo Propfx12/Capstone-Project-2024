@@ -13,6 +13,9 @@
     <br>
     <input type="submit" onclick="txt()">
 </form>
+<style>
+    
+</style>
 
 
 
@@ -30,6 +33,115 @@
         let users = localStorage.setItem("p1", p1);
         // let names = localStorage.setItem("p2", p2);
         }
+        
+        const add = (a, b) => a + b;
+
+          console.log(add(90, 7));
+
+            function number(a, b){
+                return a + b;
+            }
+
+            console.log(number(90, 7));
+
+            function Skytech(phone1, phone2){
+                return phone1 * phone2
+            }
+
+            console.log(Skytech(4, 6));
+
+
+            let pushed = ["prosper", "chinedu", "winner"]
+
+            pushed.push("Jonathan")
+            let push = pushed.push("Jonathan")
+
+            console.log(push)
+
+
+                // const myName = {
+                //     firstname: "Jonathan",
+                //     lastname: "prosper",
+                //     fullname: "Jonathan Prosper",
+                //     name: function(){
+                //         return `${this.firstname} says Woof!`;
+                //     }
+                // }
+                // console.log(myName.name)
+
+                //const ourName = ["jonathan", "prosper"]
+
+
+                let age = 18
+
+                if(age < 10){
+                    console.log("You Are An Adult")
+                }
+
+                else{
+                    console.log("You Are Under Age")
+                }
+
+                let value = 6
+
+                switch (typeof value){
+                        case  "number":
+                        console.log("nunber")
+                        break;
+
+                        case  "string":
+                        console.log("string")
+                        break;
+
+                        case  "boolean":
+                        console.log("boolean")
+                        break;
+
+                        
+                }
+
+
+function testNum(a) {
+  let result;
+  if (a > 0) {
+    result = 'positive';
+  } else {
+    result = 'NOT positive';
+  }
+  return result;
+}
+
+console.log(testNum(5));
+
+function Age (b){
+    let result;
+    if (b >= 18){
+        result = "You Are Up To 18!";
+    } else{
+        result = "You Are Not Up To 18!";
+    }
+    return result;
+}
+
+console.log(Age(18));
+
+
+
+let result = "Default Message"
+if ( new Date().getHours() < 18){
+          result = "Good Morning!"
+} else{
+    result = "Good Evening!"
+}
+console.log(result)
+
+
+
+
+
+
+
+        
 
     </script>
     

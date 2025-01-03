@@ -14,7 +14,8 @@
     width: 250px;
     height: 100%;
     /* background-color: #0ef;; */
-    background: linear-gradient(#081b29, #0ef, #081629, #0ef);
+    /* background: linear-gradient(#081b29, #0ef, #081629, #0ef); */
+    background: rgb(1, 20, 63);
     transition: all .5s ease;
 }
 
@@ -24,7 +25,7 @@
     color: white;
     text-align: center;
     line-height: 70px;
-    background: rgb(1, 12, 37);
+    background: rgb(19, 68, 183);
     user-select: none;
 }
 
@@ -57,7 +58,8 @@ label #btn,label #cancel{
     position: absolute;
     cursor: pointer;
     /* background: #0ef;; */
-    background: linear-gradient(#081b29, #0ef, #081629, #0ef);
+    /* background: linear-gradient(#081b29, #0ef, #081629, #0ef); */
+    background: rgb(247, 247, 248);
     border-radius: 3px;
 }
 label #btn{
@@ -124,6 +126,25 @@ label #cancel{
     color: #081629;
     font-size: 15px;
 }
+
+
+.navlists{
+    display: inline-block;
+    list-style: none;
+    padding: 20px;
+    background: #0ef;
+    border: 4px solid #0ef;
+    border-radius: 10px;
+    margin: 4px;
+}
+
+.navitemss{
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+    
+}
+
 
 
 
@@ -213,6 +234,39 @@ label #cancel{
 
 
 
+
+ .btns{
+    position: relative;
+     width: 80%;
+    height: 45px; 
+    background: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 600;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.btns::before{
+    content: "";
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 300%;
+     /* background: linear-gradient(#081b29, #0ef, #081629, #0ef);  */
+    background: #081629;
+    z-index: -1;
+    transition: .5s;
+}
+
+.btns:hover::before{
+    top: 0;
+} 
 
 
 

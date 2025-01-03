@@ -74,6 +74,9 @@
     border-bottom-color: #0ef;
 }
 
+
+
+
 .input-box label{
     position: absolute;
     top: 50%;
@@ -262,4 +265,18 @@
      box-shadow: 0 5px  5px rgba(0, 0, 0, 0.2); 
     z-index: 1000;
 }
+
+.ink{
+    color: #fff;
+    text-decoration: none;
+}
+
+.error{
+    border-bottom:  2px solid red !important;
+    color: red !important;
+  }
+  .invalid {
+    border-bottom: 2px solid rgb(19, 227, 19) !important;
+    color:rgb(19, 227, 19) !important ;
+  }
 
