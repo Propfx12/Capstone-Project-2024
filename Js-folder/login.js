@@ -86,14 +86,21 @@
   
     // If all fields are valid, store in localStorage
     if (isValid) {
-      localStorage.setItem("user", user);
-      localStorage.setItem("pass", pass);
-    //   localStorage.setItem("confirm", confirm);
+   const localEmail = localStorage.getItem("user");
+   const localPass  = localStorage.getItem("pass");
+  //  alert (localEmail);
+  //  alert(localPass);
+   if(user == localEmail && pass == localPass){
+           alert("Login Successful")
+           window.location.href = "Dashboard.html";
+   }else{
+       alert("Login Credencials Not Found")
+   }
   
-      // Trigger success popup
-      alert("Sign-up successful!");
+      // // Trigger success popup
+      // alert("Sign-up successful!");
     
-      window.location.href = "Dashboard.html";
+      
     }
   
    

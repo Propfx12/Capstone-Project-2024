@@ -27,3 +27,11 @@ function text (){
    localStorage.setItem("form11", form11)
 }
 
+function  reDirecttoPage1() {
+   window.location.href = "http://127.0.0.1:5500/First-Project/views/Dashboard.html";
+}
+
+function  reDirecttoPage2() {
+   window.location.href = "http://127.0.0.1:5500/First-Project/views/cover.html";
+}
+

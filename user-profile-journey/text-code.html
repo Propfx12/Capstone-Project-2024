@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile Editor</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f9;
+        }
+        .dashboard {
+            margin-top: 20px;
+        }
+        .profile-container {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+        }
+        .profile-container img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+            object-fit: cover;
+        }
+        .profile-container input[type="file"] {
+            display: none;
+        }
+        .profile-container label {
+            color: #007bff;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        .profile-container label:hover {
+            text-decoration: underline;
+        }
+        .profile-container form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .profile-container input[type="text"],
+        .profile-container input[type="email"],
+        .profile-container input[type="password"] {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            width: 100%;
+        }
+        .profile-container button {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .profile-container button:hover {
+            background-color: #0056b3;
+        }
+        .dashboard {
+            margin-top: 20px;
+            background: #f9f9f9;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .dashboard p {
+            margin: 5px 0;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-container">
+        <img id="profilePicture" src="https://via.placeholder.com/100" alt="Profile Picture">
+        <label for="profileImage">Change Photo</label>
+        <input type="file" id="profileImage" accept="image/*">
+
+        <form id="profileForm">
+            <input type="text" id="name" placeholder="Name" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <button type="submit">Save Changes</button>
+        </form>
+    </div>
+
+    <div class="dashboard" id="dashboard">
+        <h2>User Dashboard</h2>
+        <p id="dashboardName">Name: </p>
+        <p id="dashboardEmail">Email: </p>
+        <p id="dashboardPassword">Password: </p>
+    </div>
+
+    <script>
+        const profileImageInput = document.getElementById('profileImage');
+        const profilePicture = document.getElementById('profilePicture');
+        const profileForm = document.getElementById('profileForm');
+        const dashboardName = document.getElementById('dashboardName');
+        const dashboardEmail = document.getElementById('dashboardEmail');
+        const dashboardPassword = document.getElementById('dashboardPassword');
+
+        profileImageInput.addEventListener('change', (event) => {
+            const file = event.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = (e) => {
+                    profilePicture.src = e.target.result;
+                };
+                reader.readAsDataURL(file);
+            }
+        });
+
+        profileForm.addEventListener('submit', (event) => {
+            event.preventDefault();
+
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+
+            dashboardName.textContent = `Name: ${name}`;
+            dashboardEmail.textContent = `Email: ${email}`;
+            dashboardPassword.textContent = `Password: ${password}`;
+
+            console.log('User Details:', {
+                name,
+                email,
+                password,
+            });
+
+            alert('Profile updated successfully!');
+        });
+    </script>
+</body>
+</html>

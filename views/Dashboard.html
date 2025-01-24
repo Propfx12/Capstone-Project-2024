@@ -25,30 +25,77 @@
             <li><a href="#"><i class="fas -solid fa-building"></i>Company</a></li>
             <li><a href="#"><i class="fas fa-calendar-week"></i>Excutive <summary></summary></a></li>
             <li><a href="http://127.0.0.1:5500/views/industry.html"><i class="fa-solid fa-industry"></i>industry</a></li>
-            <a href="http://127.0.0.1:5500/First-Project/index.html"><button type="reset" id="btn-Signups" class="btns">Logout</button></a>
+            <!-- <a href="http://127.0.0.1:5500/First-Project/index.html"><button type="reset" id="btn-Signups" class="btns">Logout</button></a> -->
         </ul>
     </div>
 
-    
-    <div class="text-header">
-        <img src="./images/TEAM-ddb0dd07.png" alt="" class="img">
-        <h1 class="h1">
-            Avary Business Support Team
-        </h1>
-
-        
-    <div class="logout">
-     <nav>
+<div class="hero">
+    <nav>
         <ul>
-            <li class="navlist"><a href="http://127.0.0.1:5500/index.html" class="navitems">Home</a></li>
-            <li class="navlist"><a href="" class="navitems">Projects</a></li>
-            <li class="navlist"><a href="" class="navitems">Goals</a></li>
-            <li class="navlist"><a href="" class="navitems">Teams</a></li>
-           
-        
+            <li><a href="" class="navitems">Home</a></li>
+            <li><a href="" class="navitems">Features</a></li>
+            <li><a href="" class="navitems">About</a></li>
+            <li><a href="" class="navitems">Contact</a></li>
         </ul>
+        <div class="user-pic" >
+            <img src="../images/Screenshot_26.png" alt="" onclick="toggleMenu()" id="imageElementId">
+        </div>
+
+       
         
+
+        <div class="sub-menu-wrap" id="subMenu">
+            <div class="sub-menu">
+                <div class="user-info">
+                    <div class="user-info-img">
+                        <img src="../images/Screenshot_26.png" alt=""  id="imageElementId2" >
+                    </div>
+                    
+                    <h2 id="dashboardName">Jonathan Prosper</h2>
+                </div>
+                <hr>
+                <a href="../user-profile-journey/edit-profile.html" class="sub-menu-link">
+                    <img src="../images/icon for user profile.webp" alt=""  >
+                    <p >Edit Profile</p>
+                    <span>></span>
+                </a>
+               
+                <a href="#" class="sub-menu-link">
+                    <img src="../images/icon for setting.jpg" alt="">
+                    <p>Settings & Privacy</p>
+                    <span>></span>
+                </a>
+                
+                <a href="#" class="sub-menu-link">
+                    <img src="../images/icon for help.png" alt="">
+                    <p>Settings & Privacy</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="sub-menu-link">
+                    <img src="../images/icon for logout.jpg" alt="">
+                    <p>Logout</p>
+                    <span>></span>
+                </a>
+            </div>
+        </div>
     </nav>
+
+    <div class="container-hidden" id="subMenu1" >
+    <div class="profile-container"  >
+        <img id="profilePicture" src="https://via.placeholder.com/100" alt="Profile Picture">
+        <label for="profileImage">Change Photo</label>
+        <input type="file" id="profileImage" accept="image/*">
+
+        <form id="profileForm">
+            <input type="text" id="name" placeholder="Name" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <button type="submit">Save Changes</button>
+        </form>
+        
+    <!-- <h2 id="dashboardName">Jonathan Prosper</h2> -->
+    </div>
+
 </div>
 </div>
 <div class="tex">
@@ -77,18 +124,6 @@
         
 </header>
 </body>
-<script>
-    
-var sidemeu = document.getElementById("sidemenu");
 
-function openmenu(){
-    sidemeu.style.right = "0";
-}
-
-
-function closemenu(){
-    sidemeu.style.right = "-200px";
-}
-
-</script>
+<script src="../Js-folder/dashboard.js"></script>
 </html>

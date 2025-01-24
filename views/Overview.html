@@ -51,7 +51,7 @@
         </h2>
 
         <p class="text3">
-            Choose if your company is newly incorporated or an existing one.
+            Choose if your company is new or an existing one.
         </p>
 
         <form action="">
@@ -68,26 +68,69 @@
                 Choose from any of this:
               </p>
 
-        <form action="">
-            <br>
-            <br>
-            <input type="radio" name="gender" id="Consumer Service" value="Consumer Service">Consumer Service
-            <br>
-            <br>
-            <input type="radio" name="gender" id="Arts & Entertainment" value="Arts & Entertainment">Arts & Entertainment
-            <br>
-            <br>
-            <input type="radio" name="gender" id="Automotive" value="Automotive">Automotive
-            <br>
-            <br>
-            <input type="radio" name="gender" id="Bar & Nightclub" value="Bar & Nightclub">Bar & Nightclub
-            <br>
-            <br>
-            <input type="radio" name="gender" id="Beauty/Hair Salon & Day Spa" value="Beauty/Hair Salon & Day Spa">Beauty/Hair Salon & Day Spa
-            <br>
-            <br>
-            <input type="radio" name="gender" id="Business Service" value="Business Service">Business Service
-        </form>
+
+
+        <div class="dropdown">
+            <button class="dropdown-button">
+                Main Industry
+                <i class="icon"></i>
+            </button>
+            <div class="dropdown-content">
+                <input type="radio" name="gender" id="Consumer Service" value="Consumer Service" class="customerclass">Agriculture
+                <br>
+                <br>
+                <input type="radio" name="gender" id="Arts & Entertainment" value="Arts & Entertainment">Oil and Gas
+                <br>
+                <br>
+                <input type="radio" name="gender" id="Automotive" value="Automotive">Banking and Finance
+                <br>
+                <br>
+                <input type="radio" name="gender" id="Bar & Nightclub" value="Bar & Nightclub">Telecommunications
+                <br>
+                <br>
+                <input type="radio" name="gender" id="Beauty/Hair Salon & Day Spa" value="Beauty/Hair Salon & Day Spa">Construction and Real Estate
+                <br>
+                <br>
+                <input type="radio" name="gender" id="Business Service" value="Business Service">Manufacturing
+                
+                <br>
+                <br>
+                <input type="radio" name="gender" id="Consumer Service" value="Consumer Service" class="customerclass">Transportation and Logistics
+                <br>
+                <br>
+                <input type="radio" name="gender" id="Arts & Entertainment" value="Education">Education
+                <br>
+                <br>
+                <input type="radio" name="gender" id="Automotive" value="Healthcare and Pharmaceuticals">Healthcare and Pharmaceuticals
+                <br>
+                <br>
+                <input type="radio" name="gender" id="Bar & Nightclub" value="Retail and E-commerce">Retail and E-commerce
+                <br>
+                <br>
+                <input type="radio" name="gender" id="Beauty/Hair Salon & Day Spa" value="Media and Entertainment">Media and Entertainment
+                <br>
+                <br>
+                <input type="radio" name="gender" id="Business Service" value="Software Development">Software Development
+                <br>
+                <br>
+                <input type="radio" name="gender" id="Consumer Service" value="Consumer Service" class="customerclass">Hospitality and Tourism
+                <br>
+                <br>
+                <input type="radio" name="gender" id="Arts & Entertainment" value="Energy">Energy
+                <br>
+                <br>
+                <input type="radio" name="gender" id="Automotive" value="Mining and Solid Minerals">Mining and Solid Minerals
+                <br>
+                <br>
+                <input type="radio" name="gender" id="Bar & Nightclub" value="Bar & Nightclub">Bar & Nightclub
+                <br>
+                <br>
+                <input type="radio" name="gender" id="Beauty/Hair Salon & Day Spa" value="Beauty/Hair Salon & Day Spa">Beauty/Hair Salon & Day Spa
+                <br>
+                <br>
+                <input type="radio" name="gender" id="Business Service" value="Business Service">Business Service
+            </div>
+        </div>
 
         <div class="form2">
             <h1>
@@ -100,16 +143,16 @@
         </div>
 
         <div class="form3">
-            <button class="btnn">Back to Business Plan</button>
-            <!-- <button class="btn" onclick="location.href='http://127.0.0.1:5500/views/cover.html'">Save & Next</button> -->
-            <a href="http://127.0.0.1:5500/views/cover.html"><input type="submit" class="btn" onclick="text()" value="Save & Next" ></a>
+            <button class="btn" onclick="reDirecttoPage1()">Back to Dashboard</button>
+            <button class="btn" onclick="reDirecttoPage2()">Save & Next</button>
+            <!-- <a href="../views/cover.html"><input type="submit" class="btn" onclick="text()" value="Save & Next" ></a> -->
         </div>
      </div>
 
      
     </section>
     
-    <script src="../Js-folder/company.js"></script>
+    <script src="../Js-folder/overview.js"></script>
     
 </body>
 </html>
