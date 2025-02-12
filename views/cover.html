@@ -19,7 +19,7 @@
         </label>
         
         <div class="sidebar">
-            <header>Dashboard </header>
+            <header> Cover </header>
             <ul>
                 <li><a href="http://127.0.0.1:5500/views/Overview.html"><i class="fas fa-qrcode"></i>Overview</a></li>
                 <li><a href="#"><i class="fas fa-link"></i>Cover</a></li>
@@ -51,21 +51,21 @@
                 </p>
             </div>
 
-   <form action="">
+   <form action="#" onsubmit="validateNameInput(event)" id="formValidation">
     <div class="first-container">
         <div class="container">
             <h1 class="h1"> Company Name</h1>
             <div class="entryarea">
-                <input type="text" required placeholder="Enter your Company name here" id="Company Name">
-                
+                <input type="text" required placeholder="Enter your Company name here" id="company">
+                <div id="company-error-message" class="error"></div>
              </div>
         </div>
 
         <div class="container">
             <h1 class="h1"> Your Full Name</h1>
             <div class="entryarea">
-                <input type="text" required placeholder="Enter Your Full Name" id="Full Name"> 
-                
+                <input type="text" required placeholder="e.g., John Doe" name="name" id="name"> 
+                <div id="name-error-message" class="error"></div>
              </div>
         </div>
         
@@ -83,7 +83,8 @@
         <div class="container">
             <h1 class="h1"> Email Address</h1>
             <div class="entryarea">
-                <input type="text" required placeholder="Enter Your Email" id="Email"> 
+                <input type="text" required placeholder="Enter Your Email" id="email"> 
+                <div id="email-error-message" class="error"></div>
                 
              </div>
         </div>
@@ -127,16 +128,13 @@
             
          </div>
     </div>
-    
-    
 </div>
-    
-    </form>
-
-    <div class="form3">
-        <a href="../views/Overview.html"><button class="btnn">Back to Business Plan</button></a>
-        <a href="../views/company.html"><button class="btn" onclick="txt()">Save & Next</button></a>
-    </div>
+<div class="form3">
+    <button type="submit" class="btn" onclick="reDirecttoPage1()">Back to Dashboard</button>
+     <button type="submit" class="btn" id="saveNextBtn">Save & Next</button>
+</div>
+         
+</form>
     </section>
 
     <script src="../Js-folder/cover.js"></script>

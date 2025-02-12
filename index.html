@@ -83,8 +83,14 @@
     </nav>
 </div>
 </section>
-
-       <img src="./images/Screenshot_82.png" alt="" class="first-image">
+    <div id="slider-container">
+       <div id="slide-images">
+        <img src="./images/AVARY1.jpg" alt="">
+        <img src="./images/AVARY2.jpg" alt="">
+        <img src="./images/AVARY3.jpg" alt="">
+        <img src="./images/AVARY4.jpg" alt="">
+       </div>
+    </div>
 
 
        <div id="grid">
@@ -176,8 +182,9 @@
 
         <div class="text-headers">
             <h1 class="text5">
-                Avary Business Support Team
+               <span> Avary B</span>usiness Support Team
             </h1>
+          
         
 
         <nav class="nav_bars">
@@ -190,9 +197,32 @@
         </nav>
     </div>
 
+    
+
 
 </section>
     
+
+<script>
+          let currentIndex = 0;
+        let direction = 1; // 1 = forward, -1 = backward
+        const slides = document.querySelectorAll("#slide-images img");
+        const totalSlides = slides.length;
+        const slider = document.getElementById("slide-images");
+
+        function showNextSlide() {
+            if (currentIndex === totalSlides - 1) {
+                direction = -1; // Reverse at the last image
+            } else if (currentIndex === 0) {
+                direction = 1; // Move forward at the first image
+            }
+
+            currentIndex += direction;
+            slider.style.left = `-${currentIndex *40}%`; // Move images left
+        }
+
+        setInterval(showNextSlide, 3000); // Change slide every 3 seconds
+</script>
     
 </body>
 </html>

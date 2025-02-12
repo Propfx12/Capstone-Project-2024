@@ -19,20 +19,21 @@
     </label>
     
     <div class="sidebar">
-        <header>My Business </header>
+        <header> Overview </header>
         <ul>
             <li><a href="#"><i class="fas fa-qrcode"></i>Overview</a></li>
             <li><a href="http://127.0.0.1:5500/views/cover.html"><i class="fas fa-link"></i>Cover</a></li>
             <li><a href="http://127.0.0.1:5500/views/company.html#"><i class="fas -solid fa-building"></i>Company</a></li>
             <li><a href="http://127.0.0.1:5500/views/Executive-summary.html"><i class="fas fa-calendar-week"></i>Excutive-summary</a></li>
             <li><a href="http://127.0.0.1:5500/views/industry.html"><i class="fa-solid fa-industry"></i>industry</a></li>
-            <li><a href="http://127.0.0.1:5500/views/Dashboard.html?"><!--<i class="fas fa-link"></i>-->Home Page</a></li>
         </ul>
     </div>
 
     <div class="header-text">
         
         <!-- <img src="../images/TEAM-ddb0dd07.png" alt="" class="image"> -->
+
+       
         
         <h1>
             Avary <span>Support</span> Team
@@ -55,10 +56,10 @@
         </p>
 
         <form action="">
-            <input type="radio" name="gender"  id="New Company" value="New Company">New Company
+            <input type="radio" name="firstGender"  id="New Company" value="New Company">New Company
             <br>
             <br>
-            <input type="radio" name="gender" id=" Existing Company" value="Existing Company">Existing Company
+            <input type="radio" name="firstGender" id=" Existing Company" value="Existing Company">Existing Company
         </form>
 
         <h1 class="text4">
@@ -76,22 +77,22 @@
                 <i class="icon"></i>
             </button>
             <div class="dropdown-content">
-                <input type="radio" name="gender" id="Consumer Service" value="Consumer Service" class="customerclass">Agriculture
+                <input type="radio" name="gender" id="inPut1" value="Consumer Service" class="customerclass">Agriculture
                 <br>
                 <br>
-                <input type="radio" name="gender" id="Arts & Entertainment" value="Arts & Entertainment">Oil and Gas
+                <input type="radio" name="gender" id="inPut2" value="Arts & Entertainment">Oil and Gas
                 <br>
                 <br>
-                <input type="radio" name="gender" id="Automotive" value="Automotive">Banking and Finance
+                <input type="radio" name="gender" id="inPut3" value="Automotive">Banking and Finance
                 <br>
                 <br>
-                <input type="radio" name="gender" id="Bar & Nightclub" value="Bar & Nightclub">Telecommunications
+                <input type="radio" name="gender" id="inPut4" value="Bar & Nightclub">Telecommunications
                 <br>
                 <br>
-                <input type="radio" name="gender" id="Beauty/Hair Salon & Day Spa" value="Beauty/Hair Salon & Day Spa">Construction and Real Estate
+                <input type="radio" name="gender" id="inPut5" value="Beauty/Hair Salon & Day Spa">Construction and Real Estate
                 <br>
                 <br>
-                <input type="radio" name="gender" id="Business Service" value="Business Service">Manufacturing
+                <input type="radio" name="gender" id="inPut6" value="Business Service">Manufacturing
                 
                 <br>
                 <br>
@@ -128,19 +129,26 @@
                 <input type="radio" name="gender" id="Beauty/Hair Salon & Day Spa" value="Beauty/Hair Salon & Day Spa">Beauty/Hair Salon & Day Spa
                 <br>
                 <br>
-                <input type="radio" name="gender" id="Business Service" value="Business Service">Business Service
+                <input type="radio" name="gender" id="BusinessService" value="Business Service">Business Service
             </div>
         </div>
+  
 
-        <div class="form2">
+    <div class="form2">
             <h1>
                 Will you be seeking funding for your business plan?
             </h1>
-
-            <button class="btn" id="Yes" value="Yes">Yes</button>
-            <button class="btn" id="No" value="No">No</button>
-            <button class="btn" id="Not Sure" value="Not Sure">Not Sure</button>
-        </div>
+            <br>
+        <form action="">
+            <input type="radio" name="genders" id="InputofYes">Yes
+            <br>
+            <br>
+            <input type="radio" name="genders" id="InputofYes">No
+            <br>
+            <br>
+            <input type="radio" name="genders" id="InputofYes">Not Sure
+        </form>
+    </div>
 
         <div class="form3">
             <button class="btn" onclick="reDirecttoPage1()">Back to Dashboard</button>
@@ -151,6 +159,8 @@
 
      
     </section>
+
+    <p id="timeID"></p>
     
     <script src="../Js-folder/overview.js"></script>
     

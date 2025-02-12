@@ -1,22 +1,71 @@
-function txt(){
-    let form1 = document.getElementById("Company Name").value;
-    let form2 = document.getElementById("Full Name").value;
-    let form3 = document.getElementById("Title").value;
-    let form4 = document.getElementById("Email").value;
-    let form5 = document.getElementById("Street Address").value;
-    let form6 = document.getElementById("City").value;
-    let form7 = document.getElementById("State").value;
-    let form8 = document.getElementById("Code").value
-    
-    
-    // storing the data
-    
-    localStorage.setItem("form1", form1)
-    localStorage.setItem("form2", form2)
-    localStorage.setItem("form3", form3)
-    localStorage.setItem("form4", form4)
-    localStorage.setItem("form5", form5)
-    localStorage.setItem("form6", form6)
-    localStorage.setItem("form7", form7)
-    localStorage.setItem("form8", form8)
+
+document.getElementById('formValidation').addEventListener('submit', validateForm);
+
+function validateForm(event) {
+    event.preventDefault(); // Prevent form submission
+
+    const nameInput = document.getElementById('name').value.trim();
+    const companyInput = document.getElementById('company').value.trim();
+    const emailInput = document.getElementById('email').value.trim();
+    const nameerrorDiv = document.getElementById('name-error-message');
+    const companyerrorDiv = document.getElementById('company-error-message');
+    const emailerrorDiv = document.getElementById('email-error-message');
+    const nameRegex = /^[A-Za-z]+(?: [A-Za-z]+)*$/;
+    const companyRegex = /^[A-Za-z]+(?: [A-Za-z]+)*$/;
+    const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/
+
+    let form = document.getElementById("formValidation");
+    let isValid = true; // Track validation status
+
+    // Clear previous error message
+    nameerrorDiv.textContent = '';
+    companyerrorDiv.textContent = '';
+    emailerrorDiv.textContent = '';
+
+    // Validate name input
+    if (!nameRegex.test(nameInput)) {
+      // alert('Invalid name. Please enter letters and spaces only.'); // Show alert
+      nameerrorDiv.textContent = 'Invalid name. Please enter letters and spaces only.'; // Keep error message separate
+      isValid = false;
+  }
+
+   // Validate company input
+   if (!companyRegex.test(companyInput)) {
+    // alert('Invalid company name. Use letters, numbers, spaces, &, and - only.');
+    companyerrorDiv.textContent = 'Invalid company name. Use letters, numbers, spaces, &, and - only.';
+    isValid = false;
+}
+  
+
+  //  Validate email input
+  if (!emailRegex.test(emailInput)){
+    emailerrorDiv.textContent = 'Invalid email. Please make sure your email is correct.';
+    isValid = false;
+  }
+
+   // Prevent submission if any field is invalid
+   if (!isValid) return;
+
+
+    // Check if all fields are valid
+    if (!form.checkValidity()) {
+        alert("Please fill in all required fields.");
+        return;
+    }
+
+    alert("Form is valid! Redirecting...");
+
+    // Check which button was clicked
+    let clickedButton = event.submitter;
+
+    if (clickedButton.id === "saveNextBtn") {
+        window.location.href = "http://127.0.0.1:5500/First-Project/views/company.html";
+    } else {
+        window.location.href = "http://127.0.0.1:5500/First-Project/views/Overview.html";
+    }
+}
+
+// JavaScript code to redirect users to a different web page
+function reDirecttoPage1() {
+    window.location.href = "http://127.0.0.1:5500/First-Project/views/Overview.html";
 }

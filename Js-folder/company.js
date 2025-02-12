@@ -13,3 +13,32 @@ function text(){
     localStorage.setItem("form4", form4)
     localStorage.setItem("form5", form5)
 }
+
+//  JavaScript Code that reDirects Users to another Web Page.
+
+function reDirecttopageOne() {
+    window.location.href = "http://127.0.0.1:5500/First-Project/views/cover.html"
+}
+
+function reDirecttopageTwo() {
+    window.location.href = "http://127.0.0.1:5500/First-Project/views/Executive-summary.html";
+}
+
+// JavaScript Code that checks if user has selected any of the input before reDirecting them to the next page
+
+function reDirecttopageTwo() {
+    // Get  radio buttons for industry selection
+   let industryfirstselected = document.querySelector('input[name="button"]:checked');
+
+
+      // Validation check
+      if (!industryfirstselected) {
+        alert("Please Choose If Your Business is Already in Operation.");
+        return;
+    }
+
+     // Redirect if all conditions are met
+   window.location.href = "http://127.0.0.1:5500/First-Project/views/Executive-summary.html";
+
+   alert("Redirecting You To A New Page.")
+}

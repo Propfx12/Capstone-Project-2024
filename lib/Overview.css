@@ -9,7 +9,7 @@
 }
 
 body{
-    background-color: #081629;
+    background-color: #ffffff;
 }
 
 .sidebar{
@@ -17,8 +17,9 @@ body{
     left: 0;
     width: 250px;
     height: 100%;
-    /* background-color: #0ef;; */
-    background: linear-gradient(#081b29, #2427ff, #081629, #2427ff);
+    background-color: #c6d3c0f7;
+    /* background: linear-gradient(#081b29, #2427ff, #081629, #2427ff); */
+    /* background: #2427ff; */
     transition: all .5s ease;
 }
 
@@ -29,10 +30,10 @@ body{
 
 .sidebar header{
     font-size: 22px;
-    color: white;
+    color: #fff;
     text-align: center;
     line-height: 70px;
-    background: rgb(1, 12, 37);
+    background: #00750c;
     user-select: none;
 }
 
@@ -41,12 +42,12 @@ body{
     height: 100%;
     width: 100%;
     line-height: 65px;
-    font-size: 20px;
-    color: #fff;
+    font-size: 15px;
+    color: #183e09f7;
     padding-left: 40px;
     box-sizing: border-box;
     border-top: 1px solid rgba(255,255,255,.1);
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #183e09f7;
     transition: .4s;
 }
 
@@ -66,14 +67,14 @@ label #btn,label #cancel{
     cursor: pointer;
     /* background: #0ef;; */
     /* background: linear-gradient(#081b29, #2427ff, #081629, #2427ff); */
-    background: #2427ff;
+    background: #c6d3c0f7;
     border-radius: 3px;
 }
 label #btn{
     left: 40px;
     top: 25px;
     font-size: 35px;
-    color: #ffffff;
+    color: #00750c;
     padding: 6px 12px;
     transition: all .5s;
     /* z-index:1000; */
@@ -84,7 +85,7 @@ label #cancel{
     left: 195px;
     top: 17px;
     font-size: 30px;
-    color:#ffffff;
+    color: #00750c;
     padding: 4px 9px;
     transition: all .5s ease;
 
@@ -122,11 +123,11 @@ label #cancel{
     padding-top: 40px;
     font-size: 20px;
     padding-left: 40px;
-    color: #fff;
+    color: #000;
 }
 
 .header-text h1 span{
-    color: #2427ff;
+    color: #00750c;
 }
 
 /* section 2 */
@@ -140,14 +141,13 @@ label #cancel{
     justify-content: center;
     align-items: center;
     min-height: 100vh; 
-     background: #081629; 
-     color: #fff;
-     box-shadow: 0 0 25px #0ef;
-     border: 2px solid #0ef;
+    background: #c6d3c0f7; 
+    color: #000;
+    box-shadow: 0 0 25px  #00750c;
 }  
 
-form, .input{
-    color: #0ef;
+form, input{
+    color:  #00750c;
     padding-bottom: 60px;
 }
 
@@ -176,7 +176,7 @@ form, .input{
     /* width: 100%; */
     /* height: 45px; */
     background: transparent;
-    border: 2px solid #0ef;
+    border: 2px solid  #00750c;
     outline: none;
     border-radius: 10px;
     cursor: pointer;
@@ -196,7 +196,7 @@ form, .input{
     left: 0;
     width: 100%;
     height: 300%;
-    background: linear-gradient(#081b29, #0ef, #081629, #0ef);
+    background:  #00750c;
     z-index: -1;
     transition: .5s;
     /* background: #0ef; */
@@ -215,7 +215,7 @@ form, .input{
     /* width: 100%; */
     /* height: 45px; */
     background: transparent;
-    border: 2px solid #0ef;
+    /* border: 2px solid #0ef; */
     outline: none;
     border-radius: 10px;
     cursor: pointer;
@@ -318,7 +318,7 @@ form, .input{
 }
 
 .dropdown-button {
-    background-color: #007BFF;
+    background-color: #00750c;
     color: white;
     padding: 10px 15px;
     font-size: 16px;
@@ -328,15 +328,15 @@ form, .input{
 }
 
 .dropdown-button:hover {
-    background-color: #022347;
+    background-color: #00750c;
 }
 
 .dropdown-button .icon {
     border: solid white;
     border-width: 0 2px 2px 0;
     display: inline-block;
-    padding: 6px;
-    margin-left: 4px;
+    padding: 4px;
+    margin-left: 6rem;
     margin-bottom: 4px;
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
@@ -345,7 +345,7 @@ form, .input{
 .dropdown-content {
     display: none;
     /* position: absolute; */
-    background-color: #022347;
+    background-color: #fff;
     min-width: 200px;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
     z-index: 1;
@@ -370,4 +370,19 @@ form, .input{
 
 .dropdown:hover .dropdown-content {
     display: block;
+}
+
+.customerclass{
+    padding: 1em;
+    color: red;
+}
+
+/* Selected Class for reDirection Validation in JavaScript */
+.selected {
+    background-color: green;
+    color: white;
+}
+
+input[type="radio"]{
+    accent-color: #00750c;
 }

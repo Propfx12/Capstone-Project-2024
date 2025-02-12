@@ -171,7 +171,16 @@ label #cancel{
     width: 660px;
 }
 
+.container2{
+    width: 660px;
+}
+
 .entryarea{
+    position: relative;
+    height: 20px;
+    line-height: 80px;
+}
+.entryarea2{
     position: relative;
     height: 20px;
     line-height: 80px;

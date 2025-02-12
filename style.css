@@ -10,7 +10,7 @@
 #header{
     padding: 20px;
     display: flex;
-    background: #000124;
+    background: #00750c;
     
 }
 
@@ -77,7 +77,7 @@
 .header2{
     text-align: center;
     padding: 6rem;
-    background: #2427ff;
+    background: #c6d3c0f7;
 }
 
 #form{
@@ -87,12 +87,12 @@
 
 .text1{
     font-size: 25px;
-    color: #fff;
+    color: #183e09f7;
 }
 
 .header2 p{
     font-size: 15px;
-    color: #f2f3f5;
+    color: #183e09f7;
 }
 
 .search{
@@ -143,7 +143,6 @@
 
 .navlis{
     list-style: square;
-    
     padding: 10px;
 }
 
@@ -221,7 +220,7 @@
     /* height: 45px; */
     background: transparent;
     border: 2px solid #f0f0f2;
-    background: #081629;
+    background: #183e09f7;
     outline: none;
     border-radius: 10px;
     cursor: pointer;
@@ -327,3 +326,34 @@
     padding-left: 10px;
 }
 
+
+/* Slide images */
+
+#slider-container {
+    width: 100%;
+    /* max-width: 800px; */
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    margin: auto;
+}
+
+#slide-images img{
+    max-width: 25%;
+    padding: 2rem;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+#slide-images{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    background: #e5e9eb;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    transition: left 0.8s ease-in-out;
+}
