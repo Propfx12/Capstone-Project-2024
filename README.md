@@ -9,10 +9,10 @@ css
 javaScript
 
 ## User Journey for Avary Support Business Team
-(1). The Signup User Journey.
-(2). The Signin User Journey.
-(3). The User Profile Journey.
-(4). The Edit User Journey.
+(1). The Signup User Journey. (I have been able to complete the signup user journey)
+(2). The Signin User Journey. (I have also completed the Signin User Journey)
+(3). The User Profile Journey. (And the edit profile user journey as well)
+(4). The Edit User Journey.    (Completed and working as it supposed)
 (5). The Create Business User Journey.
 (6). The Edit Business User Journey.
 (7). The Delete Business User Journey.

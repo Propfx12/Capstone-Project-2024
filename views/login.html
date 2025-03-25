@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/5412624264.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+
     <link rel="stylesheet" href="../lib/login.css">
     <title>Log in</title>
 </head>
@@ -15,10 +17,10 @@
 
         <div class="form-box login">
             <h2>Login</h2>
-            <form  id="login-form" onsubmit="validateAndSubmit()">
+            <form  id="login-form">
                 <div class="input-box">
-                    <input type="text" required id="username">
-                    <label for="email" id="email">Email</label>
+                    <input type="email" required id="email">
+                    <label for="email">Email</label>
                     <i class="fa-solid fa-user"></i>
                 </div>
 
@@ -37,7 +39,7 @@
         </div>
         <div class="info-text login">
             <h2>Welcome Back!</h2>
-            <p>The <span> Avary Business Support team</span> is a dedicated group of professionals committed to 
+            <p>The  Avary Business Support team is a dedicated group of professionals committed to 
                 fostering success for new entrepreneurs. With a wealth of expertise in various industries. 
                </p>
         </div>

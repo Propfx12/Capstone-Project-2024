@@ -328,7 +328,7 @@ form, input{
 }
 
 .dropdown-button:hover {
-    background-color: #00750c;
+    background-color: #005f0a;
 }
 
 .dropdown-button .icon {
@@ -339,12 +339,10 @@ form, input{
     margin-left: 6rem;
     margin-bottom: 4px;
     transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
 }
 
 .dropdown-content {
     display: none;
-    /* position: absolute; */
     background-color: #fff;
     min-width: 200px;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
@@ -352,6 +350,7 @@ form, input{
     border-radius: 5px;
     overflow-y: auto;
     max-height: 300px;
+    position: absolute;
 }
 
 .dropdown-content button {
@@ -368,9 +367,11 @@ form, input{
     background-color: #ddd;
 }
 
-.dropdown:hover .dropdown-content {
+/* Show dropdown when toggled */
+.show {
     display: block;
 }
+
 
 .customerclass{
     padding: 1em;

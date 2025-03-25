@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../lib/businesscreation.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Business Creation</h2>
+        <div class="progress"></div>
+        <span id="stepIndicator">Step 1 of 5</span>
+
+        <form id="businessPlanForm">
+            <!-- Step 1: Overview -->
+            <div class="step active">
+                <h3>Overview</h3>
+                <label>Business Name:</label>
+                <input type="text" name="businessName" required id="Overview">
+            </div>
+
+            <!-- Step 2: Cover -->
+            <div class="step">
+                <h3>Cover</h3>
+                <label>Owner Name:</label>
+                <input type="file" required>
+                <input type="text" name="ownerName" required id="cover">
+            </div>
+
+            <!-- Step 3: Company -->
+            <div class="step">
+                <h3>Company</h3>
+                <label>Company Type:</label>
+                <input type="text" name="companyType" required id="company">
+            </div>
+
+            <!-- Step 4: Executive Summary -->
+            <div class="step">
+                <h3>Business Description</h3>
+                <label>Summary:</label>
+                <textarea name="summary" id="business" required></textarea>
+            </div>
+
+            <!-- Step 5: Industry -->
+            <div class="step">
+                <h3>Industry</h3>
+                <label>Industry Type:</label>
+                <input type="text" name="industryType" required id="Industry">
+            </div>
+
+            <!-- Navigation Buttons -->
+            <div class="buttons">
+                <button type="button" id="prevBtn" onclick="changeStep(-1)" disabled>Back</button>
+                <button type="button" id="nextBtn" onclick="changeStep(1)">Next</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="../Js-folder/businesscreation.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,104 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 500px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+.progress {
+    width: 100%;
+    background: #ddd;
+    height: 8px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.progress::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: calc((100% / 5) * var(--progress-step, 1));
+    background: #4CAF50;
+    transition: width 0.3s ease;
+}
+
+.step {
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+textarea {
+    resize: none;
+    height: 80px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease;
+}
+
+#prevBtn {
+    background: #ccc;
+    color: #333;
+}
+
+#prevBtn:hover {
+    background: #bbb;
+}
+
+#nextBtn {
+    background: #4CAF50;
+    color: white;
+}
+
+#nextBtn:hover {
+    background: #45a049;
+}
